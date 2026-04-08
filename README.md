@@ -17,8 +17,8 @@ De proxy zit tussen je EV-laadpaal en je CSMS (Charge Point Management System) i
 
 1. Ga naar **Instellingen → Add-ons**
 2. Klik rechtsboven op het **⋮ menu**
-3. Kies **"Check for updates"** of **"Zoek naar lokale add-ons"**
-4. De **OCPP Proxy** verschijnt nu in de lijst onder "Lokale add-ons"
+3. Kies **"repositories"**
+4. Voeg de volgende URL toe: "https://github.com/Tinus78/ocpp-proxy-app/"
 5. Klik op de add-on en kies **Installeren**
 
 ---
