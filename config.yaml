@@ -1,0 +1,29 @@
+name: "OCPP Proxy"
+description: "Joulo OCPP WebSocket proxy – stuurt laadpaalverkeer door naar een of meerdere CSMS backends."
+version: "1.0.0"
+slug: "ocpp_proxy"
+init: false
+homeassistant_api: false
+auth_api: false
+
+arch:
+  - aarch64
+  - amd64
+  - armv7
+  - armhf
+  - i386
+
+ports:
+  9000/tcp: 9000
+ports_description:
+  9000/tcp: "OCPP WebSocket poort voor laadpalen"
+
+options:
+  primary_csms_url: "wss://jouw-csms.example.com/ocpp"
+  secondary_csms_urls: ""
+  log_level: "info"
+
+schema:
+  primary_csms_url: str
+  secondary_csms_urls: str
+  log_level: list(debug|info|warn|error)
