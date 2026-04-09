@@ -1,5 +1,5 @@
 name: "OCPP Proxy"
-description: "Joulo OCPP WebSocket proxy – stuurt laadpaalverkeer door naar een of meerdere CSMS backends."
+description: "Joulo OCPP WebSocket proxy – forwards charger OCPP traffic to one or multiple backends"
 version: "1.0.0"
 slug: "ocpp_proxy"
 init: false
@@ -16,7 +16,7 @@ arch:
 ports:
   9000/tcp: 9000
 ports_description:
-  9000/tcp: "OCPP WebSocket poort voor laadpalen"
+  9000/tcp: "OCPP WebSocket poort for chargers"
 
 options:
   primary_csms_url: "wss://jouw-csms.example.com/ocpp"
